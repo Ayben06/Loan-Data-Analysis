@@ -63,7 +63,7 @@ Handling missing values is crucial to ensure the accuracy and reliability of the
 - **Identification of Missing Values**: Missing values were identified using the `isnull()` function in pandas, which highlights gaps in the dataset.
 - **Approach for Handling Missing Values**:
   - **Imputation**: For non-critical fields with missing values (e.g., `Dependents`, `Married`, `Gender`,  `Self_Emplyed`), missing values were imputed with the mode of the respective field to avoid data loss while preserving dataset completeness.
-  - - **Prediction**: Missing values in the `Credit_History` field were predicted using a RandomForestClassifier. This model was trained on the available data to estimate the missing values based on other features.
+  - **Prediction**: Missing values in the `Credit_History` field were predicted using a RandomForestClassifier. This model was trained on the available data to estimate the missing values based on other features.
 **Examples**  
 ```python
 # Identifying missing values
