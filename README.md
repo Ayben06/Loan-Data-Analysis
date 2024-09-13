@@ -34,23 +34,23 @@ Example: Approved, Rejected
 
 ## Visualizations
 - **Marital Status vs Loan Status**
-  - **Purpose**: To analyze how marital status impacts loan approval rates.
+  - Insights: This visualization helps determine if married applicants are more or less likely to get their loans approved compared to single applicants. It can reveal any patterns or biases related to marital status in loan decisions.
 - **Gender Status vs Loan Status**
-  - **Purpose**: To examine gender-based differences in loan approval rates.
+  - Insights: This chart shows if there are differences in loan approval rates between different genders. It helps identify any gender-related disparities in loan approvals.
 - **Gender Breakdown**
-  - **Purpose**: To visualize the distribution of genders among applicants.
+  - Insights: This visualization provides a clear picture of the gender composition of the applicants, which can be useful for understanding demographic representation and targeting.
 - **Income vs Loan Amount Scatter Plot**
-  - **Purpose**: To explore the relationship between applicant income and loan amount requested.
+  - Insights: This scatter plot helps in identifying any correlation between income levels and loan amounts. It can reveal if higher income is associated with higher loan amounts or if there are outliers.
 - **Education vs Loan Amount Box Plot**
-  - **Purpose**: To compare loan amounts across different educational qualifications.
+  - Insights: This box plot provides a visual representation of the distribution of loan amounts for different educational qualifications, helping to see if education level influences the size of loans requested.
 - **Proportion of Loans for Each Term**
-  - **Purpose**: To show the distribution of loan terms among approved loans.
+  - Insights: This visualization highlights the popularity of different loan terms (e.g., 15 years vs. 30 years) and helps understand which terms are most common among borrowers.
 - **Loan Status vs Area**
-  - **Purpose**: To analyze variations in loan approval rates based on geographic area.
+  - Insights: This chart reveals if there are variations in loan approval rates depending on the applicant's location (e.g., Urban, Semiurban, Rural). It can help in assessing regional differences in loan outcomes.
 - **Applicant Income Box Plot**
-  - **Purpose**: To illustrate the distribution of applicant incomes.
+  - Insights: This box plot provides an overview of the range, median, and variability of applicant incomes, helping to understand the income profile of the applicants.
 - **Distribution of Applicant Income**
-  - **Purpose**: To visualize the frequency of different income levels among applicants.
+  - Insights: This visualization helps in understanding the frequency of different income levels among applicants, which can be useful for identifying income trends and patterns.
 
 ## Data Cleaning
 
