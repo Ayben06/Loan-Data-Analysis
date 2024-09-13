@@ -52,9 +52,31 @@ Example: Approved, Rejected
 - **Distribution of Applicant Income**
   - **Purpose**: To visualize the frequency of different income levels among applicants.
 
-## Methodology
-- **Data Cleaning**: [Description of preprocessing steps]
-- **Analysis**: [Description of analytical methods]
+## Data Cleaning
+
+### Handling Missing Values
+
+**Overview**  
+Handling missing values is crucial to ensure the accuracy and reliability of the data analysis. Missing values can skew results and lead to misleading conclusions.
+
+**Method Used**  
+- **Identification of Missing Values**: Missing values were identified using the `isnull()` function in pandas, which highlights gaps in the dataset.
+- **Approach for Handling Missing Values**:
+  - **Imputation**: For non-critical fields with missing values (e.g., `Dependents`, `Married`, `Gender`,  `Self_Emplyed`), missing values were imputed with the mode of the respective field to avoid data loss while preserving dataset completeness.
+  - - **Prediction**: Missing values in the `Credit_History` field were predicted using a RandomForestClassifier. This model was trained on the available data to estimate the missing values based on other features.
+**Examples**  
+```python
+# Identifying missing values
+missing_values = data.isnull().sum()
+
+# Imputing missing values with mode
+data['Dependents'].fillna(data['Dependents'].mode()[0], inplace=True)
+
+# Filling missing values with predicted values
+X_missing = missing_data[features]
+missing_data['Credit_History'] = model.predict(X_missing)
+data.loc[data['Credit_History'].isnull(), 'Credit_History'] = missing_data['Credit_History']
+```
 
 ## Results and Insights
 Each visualization provides a different perspective on the loan data, helping to uncover insights into loan approval patterns, demographic influences, and financial behaviors. Together, these visualizations offer a comprehensive view of the factors affecting loan applications and approvals, which is valuable for making data-driven decisions, improving loan processes, and addressing any disparities or trends.
